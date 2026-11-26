@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Index · dailyindex.pro로 이전했어요</title>
+<!-- 기존 GitHub Pages 저장소 맨 위에 404.html로 둔다. 지난 리포트(/daily-index/reports/2026-11-25.html) 같은 깊은 주소는
+     파일을 지운 뒤 이 페이지가 받아서 새 도메인의 같은 경로(/reports/2026-11-25)로 보낸다. -->
+<link rel="canonical" href="https://dailyindex.pro/">
+<meta name="robots" content="noindex, follow">
+<script>
+  (function () {
+    var rest = location.pathname.replace(/^\/daily-index\/?/, '/');      // /daily-index/reports/x.html → /reports/x.html
+    var m = rest.match(/^\/reports\/(\d{4}-\d{2}-\d{2})(\.html)?\/?$/);
+    var path = m ? '/reports/' + m[1] : '/';                               // 리포트가 아니면 첫 화면으로
+    location.replace('https://dailyindex.pro' + path + location.search + location.hash);
+  })();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://dailyindex.pro/"></noscript>
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif; color: #1d1d1f; background: #f5f5f7; }
+  @media (prefers-color-scheme: dark) { body { color: #f5f5f7; background: #000; } a { color: #2997ff; } }
+  main { padding: 24px; text-align: center; }
+  a { color: #0066cc; }
+</style>
+</head>
+<body>
+<main>
+  <p>Daily Index가 새 주소로 이전했어요.</p>
+  <p><a href="https://dailyindex.pro/">https://dailyindex.pro</a>로 이동하는 중이에요.</p>
+</main>
+</body>
+</html>

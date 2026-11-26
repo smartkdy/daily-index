@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Index · dailyindex.pro로 이전했어요</title>
+<!-- 기존 GitHub Pages(smartkdy.github.io/daily-index/)의 index.html 자리에 둔다. 서버 301을 쓸 수 없는 GitHub Pages에서 301과 같은 효과:
+     검색 엔진은 canonical + 0초 meta refresh를 영구 이동으로 다루고, 사람은 JS로 즉시 이동(뒤로 가기에 이 페이지가 남지 않게 replace). -->
+<link rel="canonical" href="https://dailyindex.pro/">
+<meta http-equiv="refresh" content="0; url=https://dailyindex.pro/">
+<meta name="robots" content="noindex, follow">
+<script>
+  // #forecast 같은 화면 위치와 ?쿼리는 그대로 넘긴다
+  location.replace('https://dailyindex.pro/' + location.search + location.hash);
+</script>
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif; color: #1d1d1f; background: #f5f5f7; }
+  @media (prefers-color-scheme: dark) { body { color: #f5f5f7; background: #000; } a { color: #2997ff; } }
+  main { padding: 24px; text-align: center; }
+  a { color: #0066cc; }
+</style>
+</head>
+<body>
+<main>
+  <p>Daily Index가 새 주소로 이전했어요.</p>
+  <p><a href="https://dailyindex.pro/">https://dailyindex.pro</a>로 이동하는 중이에요.</p>
+</main>
+</body>
+</html>
